@@ -13,7 +13,7 @@ void main() {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (context) => SliderScreenProvider(),
+          create: (context) => App_provider(),
         )
       ],
       child: MaterialApp(

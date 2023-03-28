@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 
-class SliderScreenProvider extends ChangeNotifier {
+class App_provider extends ChangeNotifier {
   List playlistImg = [
   "assets/images/arijit-singh-7592.jpg",
    "assets/images/download.jpeg",
