@@ -6,8 +6,6 @@ import 'package:provider/provider.dart';
 import 'music/provider/ExploreProvider.dart';
 import 'music/view/ExploreScreen.dart';
 
-
-
 void main() {
   runApp(
     MultiProvider(
@@ -18,7 +16,8 @@ void main() {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        routes: {'/': (context) => Homescreen(),
+        routes: {
+          '/': (context) => Homescreen(),
         },
       ),
     ),
