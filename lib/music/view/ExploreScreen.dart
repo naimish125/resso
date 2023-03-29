@@ -47,32 +47,34 @@ class _HomescreenState extends State<Homescreen> {
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
-                    return Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Container(
-                          margin: EdgeInsets.all(5),
-                          height: 70,
-                          width: 70,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            shape: BoxShape.circle,
+                      return Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.all(5),
+                            height: 70,
+                            width: 70,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              shape: BoxShape.circle,
+                            ),
+                            child: ClipRRect(
+                                borderRadius: BorderRadius.circular(50),
+                                child: Image.asset(
+                                  "${AF!.playlistImg[index]}",
+                                  fit: BoxFit.cover,
+                                )),
                           ),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(50),
-                              child: Image.asset(
-                                "${AF!.playlistImg[index]}",
-                                fit: BoxFit.cover,
-                              )),
-                        ),
-                        Text("${AF!.playlistName[index]}",
-                            style: GoogleFonts.poppins(
-                                color: Colors.white, fontSize: 11, letterSpacing: 1)),
-                      ],
-                    );
-                  },itemCount: AF!.playlistImg.length,)
-                  ),
+                          Text("${AF!.playlistName[index]}",
+                              style: GoogleFonts.poppins(
+                                  color: Colors.white,
+                                  fontSize: 11,
+                                  letterSpacing: 1)),
+                        ],
+                      );
+                    }, itemCount: AF!.playlistImg.length,)
+              ),
               SizedBox(
                 height: 10,
               ),
@@ -98,29 +100,31 @@ class _HomescreenState extends State<Homescreen> {
                   child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                    return Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Container(
-                          margin: EdgeInsets.all(5),
-                          height: 90,
-                          width: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            shape: BoxShape.circle,
-                          ),
-                          child: Image.asset(
-                            "${AF!.playlistImg[index]}",
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                        Text("${AF!.playlistName[index]}",
-                            style: GoogleFonts.poppins(
-                                color: Colors.white, fontSize: 11, letterSpacing: 1)),
-                      ],
-                    );
-                  },itemCount: AF!.playlistImg.length)
+                        return Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              margin: EdgeInsets.all(5),
+                              height: 90,
+                              width: 90,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                shape: BoxShape.circle,
+                              ),
+                              child: Image.asset(
+                                "${AF!.playlistImg[index]}",
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            Text("${AF!.playlistName[index]}",
+                                style: GoogleFonts.poppins(
+                                    color: Colors.white,
+                                    fontSize: 11,
+                                    letterSpacing: 1)),
+                          ],
+                        );
+                      }, itemCount: AF!.playlistImg.length)
               ),
               SizedBox(
                 height: 10,
@@ -144,29 +148,31 @@ class _HomescreenState extends State<Homescreen> {
                   child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                    return Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Container(
-                          margin: EdgeInsets.all(5),
-                          height: 90,
-                          width: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            shape: BoxShape.circle,
-                          ),
-                          child: Image.asset(
-                            "${AF!.playlistImg[index]}",
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                        Text("${AF!.playlistName[index]}",
-                            style: GoogleFonts.poppins(
-                                color: Colors.white, fontSize: 11, letterSpacing: 1)),
-                      ],
-                    );
-                  },itemCount: AF!.playlistImg.length)
+                        return Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              margin: EdgeInsets.all(5),
+                              height: 90,
+                              width: 90,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                shape: BoxShape.circle,
+                              ),
+                              child: Image.asset(
+                                "${AF!.playlistImg[index]}",
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            Text("${AF!.playlistName[index]}",
+                                style: GoogleFonts.poppins(
+                                    color: Colors.white,
+                                    fontSize: 11,
+                                    letterSpacing: 1)),
+                          ],
+                        );
+                      }, itemCount: AF!.playlistImg.length)
               ),
               SizedBox(
                 height: 10,
@@ -188,31 +194,33 @@ class _HomescreenState extends State<Homescreen> {
               Container(
                   height: 160,
                   child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
+                      scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                    return Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Container(
-                          margin: EdgeInsets.all(5),
-                          height: 90,
-                          width: 90,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            shape: BoxShape.circle,
-                          ),
-                          child: Image.asset(
-                            "${AF!.playlistImg[index]}",
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                        Text("${AF!.playlistName[index]}",
-                            style: GoogleFonts.poppins(
-                                color: Colors.white, fontSize: 11, letterSpacing: 1)),
-                      ],
-                    );
-                  },itemCount: AF!.playlistImg.length)
+                        return Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              margin: EdgeInsets.all(5),
+                              height: 90,
+                              width: 90,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                shape: BoxShape.circle,
+                              ),
+                              child: Image.asset(
+                                "${AF!.playlistImg[index]}",
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            Text("${AF!.playlistName[index]}",
+                                style: GoogleFonts.poppins(
+                                    color: Colors.white,
+                                    fontSize: 11,
+                                    letterSpacing: 1)),
+                          ],
+                        );
+                      }, itemCount: AF!.playlistImg.length)
               ),
             ],
           ),
@@ -220,56 +228,4 @@ class _HomescreenState extends State<Homescreen> {
       ),
     );
   }
-
-  // Widget singerBox(String singerImg, String singerName) {
-  //   return Column(
-  //     mainAxisAlignment: MainAxisAlignment.center,
-  //     crossAxisAlignment: CrossAxisAlignment.center,
-  //     children: [
-  //       Container(
-  //         margin: EdgeInsets.all(5),
-  //         height: 90,
-  //         width: 90,
-  //         decoration: BoxDecoration(
-  //           color: Colors.white,
-  //           shape: BoxShape.circle,
-  //         ),
-  //         child: ClipRRect(
-  //             borderRadius: BorderRadius.circular(50),
-  //             child: Image.asset(
-  //               "${singerImg}",
-  //               fit: BoxFit.cover,
-  //             )),
-  //       ),
-  //       Text("${singerName}",
-  //           style: GoogleFonts.poppins(
-  //               color: Colors.white, fontSize: 11, letterSpacing: 1)),
-  //     ],
-  //   );
-  // }
-  //
-  // Widget songBox(String playlistImg, String playlistName) {
-  //   return Column(
-  //     children: [
-  //       Container(
-  //         margin: EdgeInsets.all(10),
-  //         height: 120,
-  //         width: 110,
-  //         decoration: BoxDecoration(
-  //           color: Colors.grey,
-  //           borderRadius: BorderRadius.circular(10),
-  //         ),
-  //         child: ClipRRect(
-  //             borderRadius: BorderRadius.circular(10),
-  //             child: Image.asset(
-  //               "${playlistImg}",
-  //               fit: BoxFit.cover,
-  //             )),
-  //       ),
-  //       Text("${playlistName}",
-  //           style: GoogleFonts.poppins(
-  //               color: Colors.white, fontSize: 11, letterSpacing: 1)),
-  //     ],
-  //   );
-  // }
 }
